@@ -16,10 +16,10 @@ export const Roles = ({ roles }) => {
                   <ul key={uuidv4()}>
                     {key}
                     <li key={uuidv4()}>
-                      <p>{name}</p>
-                      <p>{squad}</p>
-                      <p>{level}</p>
-                      <p>{andTitle}</p>
+                      <p>Name: {name}</p>
+                      <p>Squad: {squad}</p>
+                      <p>Level: {level}</p>
+                      <p>And title: {andTitle}</p>
                       <img src={photo} alt='#' />
                     </li>
                   </ul>
