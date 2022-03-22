@@ -27,12 +27,17 @@ export const AccordionList = ({ accordionData, handleToggle, toggle }) => {
               })}
             </div>
             {accordionData.map((client) => {
-              return (
-                <AccordionProjects
-                  key={uuidv4()}
-                  projects={client["projects"]}
-                />
-              );
+              console.log("client", client);
+              console.log("client.clientId", client.clientId);
+              console.log("clientId", clientId);
+              if (client.clientId === clientId) {
+                return (
+                  <AccordionProjects
+                    key={uuidv4()}
+                    projects={client["projects"]}
+                  />
+                );
+              }
             })}
           </>
         ) : (
