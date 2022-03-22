@@ -1,4 +1,5 @@
 import { Roles } from "./Roles";
+import { v4 as uuidv4 } from "uuid";
 
 export const AccordionProjectsList = ({
   accordionData,
@@ -36,7 +37,7 @@ export const AccordionProjectsList = ({
               <p>{start}</p>
               <p>{end}</p>
               <p>{clientContact}</p>
-              <Roles roles={roles} />
+              <Roles key={uuidv4()} roles={roles} />
             </div>
           </>
         ) : (
