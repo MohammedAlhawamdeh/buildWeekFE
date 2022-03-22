@@ -27,9 +27,6 @@ export const AccordionList = ({ accordionData, handleToggle, toggle }) => {
               })}
             </div>
             {accordionData.map((client) => {
-              console.log("client", client);
-              console.log("client.clientId", client.clientId);
-              console.log("clientId", clientId);
               if (client.clientId === clientId) {
                 return (
                   <AccordionProjects

@@ -36,7 +36,6 @@ export const AccordionProjectsList = ({
               <p>{start}</p>
               <p>{end}</p>
               <p>{clientContact}</p>
-              {console.log(<Roles roles={roles} />)}
               <Roles roles={roles} />
             </div>
           </>
