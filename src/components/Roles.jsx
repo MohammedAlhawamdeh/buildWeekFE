@@ -20,6 +20,7 @@ export const Roles = ({ roles }) => {
                       <p>{squad}</p>
                       <p>{level}</p>
                       <p>{andTitle}</p>
+                      <img src={photo} alt='#' />
                     </li>
                   </ul>
                 );
